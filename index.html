@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/boostrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/lesber.css">
+</head>
+<body>
+<div id="content">
+ <div class="box" >
+   <h1 >Text me</h1>
+  <form id="formOne" class="menu" action="/room">
+   <input type="text" name="room" id="roomname">
+   <input type="text" name="Username" id="nameNew" placeholder="Username"> 
+   <p id="messageone"></p>
+   <input id="create" value="Create" type="Submit" placeholder="New Group">
+     </form>
+     <form id="formTwo" class="menu1" name="myform" action="/room"  >
+    <h3>Join a Chat</h3>
+ <input  type="text" name="userJoin" placeholder="Username" id="user-Join">
+ <input onkeyup="checkk()" type="text" name="roomId"  id="room"  placeholder="ROOM ID"> 
+ <p id="messagetwo"></p> 
+ <input type="Submit" id="join" value="Join">
+</form>
+</div>
+</div>
+
+
+<style type="text/css">
+
+   body {
+  margin:0;
+  padding:0;
+  font-family:sans-serif; 
+ background:#34495E; 
+ }
+ h3{
+  color: white
+ }
+
+ ::placeholder{
+
+color:  white;
+font-weight:300
+ }
+
+#messageone{
+  
+margin:0;
+color:  #ff726f;
+font-weight: 300;
+font-size: 15px
+}
+#messagetwo{
+
+margin:0;
+color:  #ff726f;
+font-weight: 300;
+font-size: 15px
+
+}
+
+#create{
+  font-weight: bold;
+font-size: 15px;
+}
+#join{
+  font-weight: bold;
+font-size: 15px;
+}
+ .box {
+
+  width:340px;
+  padding:0px;
+  position:absolute;
+   top :50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+   background:  #34495E;
+   text-align: center;
+  
+/*background-image: radial-gradient(#606c88,#3f4c6b);
+background-color: #0e1e24;*/
+background-color: #34495e;
+   box-shadow: 0px 1px 10px rgba(0,0,0,0.7);
+ }
+ #join{
+  border:0;
+ background:none;
+ display: inline-block;
+ margin:  20px auto;  
+ text-align: center;
+ border:2px solid #2ecc71 ;
+ padding: 14px 40px;
+ outline: none;
+ color:white;
+ border-radius: 20px;
+ transition: 0.25s;
+ cursor:pointer;
+
+ }
+ #join:hover{
+   background:#2ecc71; 
+ }
+ .menu{
+  
+ }
+ #formOne{
+  
+  display:inline-block;
+  width: 100%;
+ }
+ #roomname{
+  width: 0;
+  height: 0;
+  overflow-x: hidden;
+  padding: 0;
+  border: 0;
+ }
+ #formTwo{
+  
+ }
+ .box h1 {
+   color: white;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 25px;
+
+  
+   letter-spacing: 6px;
+    font-family:'Lobster'
+ }
+ .box input[type = "text"],.box input[type = "password"]{
+ border:0;
+ background:none;
+ display: block;
+ margin:  20px auto;  
+ text-align: center;
+ border:2px solid #3498db;
+ padding: 15px 11px;
+ width:230px;
+ outline: none;
+ color:white;
+ border-radius: 15px;
+ transition: 0.25s;
+
+ }
+ .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+   width: 280px; 
+ border-color:#2ecc71;
+
+}
+.box input[type ="submit"]{
+border:0;
+ background:none;
+ display: block;
+ margin:  20px auto;  
+ text-align: center;
+ border:2px solid #2ecc71 ;
+ padding: 14px 40px;
+ outline: none;
+ color:white;
+ border-radius: 20px;
+ transition: 0.25s;
+ cursor:pointer;
+}
+.box input[type ="submit"]:hover{
+ background:#2ecc71;  
+}
+#content{
+  width: 100%;
+  height: 100vh;
+  
+}
+
+@media only screen and (max-width: 500px){
+
+
+  .box h1 {
+   text-align: left;
+ }
+  #room{
+
+     border: 0;
+   
+     background: rgb(0,0,0,0.5);
+    
+  }
+
+  #room:focus{
+   
+border:0.5px solid red;
+   
+  }
+  #user-Join{
+     border: 0;
+    background: rgb(0,0,0,0.5);
+     
+
+  }
+  #user-Join:focus{
+  border:0.5px solid red;
+   
+   
+    
+
+  }
+  #create{
+    border: 0;
+    margin:0;
+  
+ box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+         
+/*background-color: #4D5656;*/
+background:#191919; 
+  }
+
+  #create:hover{
+    background: #C0392B;
+ 
+
+  }
+  body{
+    display: flex;
+  }
+
+    #nameNew{
+    
+    border: 0;
+   background: rgba(0,0,0,0.5);
+
+    }
+    #nameNew:focus{
+border:0.5px solid red;
+   
+    }
+
+  .box {
+ height: 100vh;
+width: 100%;
+/*background: #000;*/
+/*background-image: linear-gradient(#fe8c00,#f83600);*/
+ }
+ #formTwo{
+   height: 48%;
+
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+ }
+ #formOne{
+  height: 26%;
+
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+ }
+
+  
+ h3{
+   margin: 0;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+font-weight: bold
+ }
+ .box:before {
+ content: "";
+/*background: #000;*/
+/*background-image: linear-gradient(#141e30,#243b55);*/
+ z-index: -1;
+ position: absolute;
+ width: 100%;
+ height: 50%;
+
+  border-top-right-radius: 40%;
+ bottom: 0;
+ right: 0;
+ }
+ #join{
+  
+ border: 0;
+    margin:0;
+background:#191919; 
+ box-shadow:  7px 7px 20px rgba(0,0,0,0.4);
+ }
+ #join:hover{
+  
+  background: #C0392B;
+ 
+ }
+ .menu{
+  
+ }
+ #formOne{
+  
+ 
+ }
+ #roomname{
+ 
+ }
+ 
+ .box h1 {
+    margin: 0;
+ }
+ .box input[type = "text"],.box input[type = "password"]{
+margin: 0;
+ }
+ .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  
+margin: 0;
+}
+.box input[type ="submit"]{
+margin: 0;
+}
+.box input[type ="submit"]:hover{
+
+}
+#content{
+display: flex;
+}
+
+}
+
+</style>
+  
+  <script type="text/javascript" src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="js/script2.js"></script>
+
+
+</body>
+</html>
