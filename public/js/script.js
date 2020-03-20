@@ -167,8 +167,8 @@ box.style.marginBottom="0%";
 
 sendmessage.addEventListener("focus", function(){
   bigbox.style.display="flex"
-   box.style.bottom="40%"
-   containermessage.style.bottom="40%"
+   box.style.bottom="0%"
+   containermessage.style.bottom="0%"
    
 })
   	
