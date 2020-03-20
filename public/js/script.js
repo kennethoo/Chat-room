@@ -24,7 +24,7 @@ let info = document.getElementById("info")
  let personename
 
 leave.addEventListener("click",function(){
-window.location.href="/"
+location.replace("/")
 })
 
 socket.on("users-diconnected", name=>{

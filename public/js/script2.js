@@ -36,7 +36,7 @@ roomnamen.value=room;
 
  socket.emit("jointe", room)
  socket.emit("Username", newName)
-
+nameNew.value=""
   }
 })
 })
@@ -57,6 +57,8 @@ if (newuser.length==0||newromId.length==0 || ok=="bad") {
 else{
 socket.emit("jointe", newromId)
  socket.emit("Username", newuser)
+ userJoin.value= " "
+ roomid.value= " "
 }
 
 })
