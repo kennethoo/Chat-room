@@ -1,7 +1,7 @@
 
 
 
-const socket = io("https://text19-me.herokuapp.com")
+const socket = io("https://text19-me.herokuapp.com/")
 let list = document.getElementById("list")
 let closelist= document.querySelector(".closeslist")
 let people= document.getElementById("people")
