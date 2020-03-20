@@ -1,6 +1,6 @@
 
 
-let socket = io("http://localhost:3000/")
+let socket = io("https://text19-me.herokuapp.com/")
 let list = document.getElementById("list")
 let closelist= document.querySelector(".closeslist")
 let people= document.getElementById("people")
