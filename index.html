@@ -9,6 +9,7 @@
 <body>
 <div id="content">
  <div class="box" >
+  
    <h1 >Text me</h1>
   <form id="formOne" class="menu" action="/room">
    <input type="text" name="room" id="roomname">
@@ -16,6 +17,8 @@
    <p id="messageone"></p>
    <input id="create" value="Create" type="Submit" placeholder="New Group">
      </form>
+    
+    
      <form id="formTwo" class="menu1" name="myform" action="/room"  >
     <h3>Join a Chat</h3>
  <input  type="text" name="userJoin" placeholder="Username" id="user-Join">
@@ -24,6 +27,7 @@
  <input type="Submit" id="join" value="Join">
 </form>
 </div>
+
 </div>
 
 
@@ -34,6 +38,7 @@
   padding:0;
   font-family:sans-serif; 
  background:#34495E; 
+
  }
  h3{
   color: white
@@ -78,11 +83,12 @@ font-size: 15px;
    left:50%;
    transform:translate(-50%,-50%);
    background:  #34495E;
+ 
    text-align: center;
   
 /*background-image: radial-gradient(#606c88,#3f4c6b);
 background-color: #0e1e24;*/
-background-color: #34495e;
+
    box-shadow: 0px 1px 10px rgba(0,0,0,0.7);
  }
  #join{
@@ -95,7 +101,7 @@ background-color: #34495e;
  padding: 14px 40px;
  outline: none;
  color:white;
- border-radius: 20px;
+
  transition: 0.25s;
  cursor:pointer;
 
@@ -127,7 +133,7 @@ background-color: #34495e;
    font-weight: 500;
    font-size: 25px;
 
-  
+   
    letter-spacing: 6px;
     font-family:'Lobster'
  }
@@ -142,7 +148,7 @@ background-color: #34495e;
  width:230px;
  outline: none;
  color:white;
- border-radius: 15px;
+ border-radius: 10px;
  transition: 0.25s;
 
  }
@@ -161,9 +167,11 @@ border:0;
  padding: 14px 40px;
  outline: none;
  color:white;
- border-radius: 20px;
+border-bottom-left-radius: 20%;
+ border-top-right-radius: 20%;
  transition: 0.25s;
  cursor:pointer;
+
 }
 .box input[type ="submit"]:hover{
  background:#2ecc71;  
@@ -178,32 +186,36 @@ border:0;
 
 
   .box h1 {
-   text-align: left;
+   text-align: left
  }
   #room{
 
      border: 0;
    
      background: rgb(0,0,0,0.5);
-    
+ 
   }
 
   #room:focus{
    
-border:0.5px solid red;
+  
+   background: none;
+     
+    border:2px solid #2ecc71 ;
    
   }
   #user-Join{
      border: 0;
-    background: rgb(0,0,0,0.5);
+  background: rgb(0,0,0,0.5);
      
 
   }
   #user-Join:focus{
-  border:0.5px solid red;
+ 
    
-   
-    
+   background: none;
+     
+    border:2px solid #2ecc71 ;
 
   }
   #create{
@@ -232,7 +244,10 @@ background:#191919;
 
     }
     #nameNew:focus{
-border:0.5px solid red;
+  
+   background: none;
+     
+    border:2px solid #2ecc71 ;
    
     }
 
@@ -241,15 +256,20 @@ border:0.5px solid red;
 width: 100%;
 /*background: #000;*/
 /*background-image: linear-gradient(#fe8c00,#f83600);*/
+background: rgb(52,73,94,0.8);
+ background: linear-gradient(42deg, rgba(42,46,54,1) 0%, rgba(97,107,125,1) 100%);
  }
  #formTwo{
-   height: 48%;
+   height: 46%;
 
 
 display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
+ }
+ #bottom{
+ 
  }
  #formOne{
   height: 26%;
@@ -258,12 +278,13 @@ display:flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
+
  }
 
   
  h3{
    margin: 0;
-  color: #000;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
 font-weight: bold

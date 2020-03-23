@@ -41,6 +41,12 @@ let template= document.createElement("div")
   document.getElementById("list").append(template)
 
 
+  let elms = document.querySelector('#container-message').lastElementChild;
+  elms.scrollIntoView();
+  containermessage.style.paddingBottom="100px"
+
+
+
 
 })
 
@@ -67,11 +73,16 @@ document.getElementById("container-message").append(boxMessageone)
 
 let template= document.createElement("div")
   template.setAttribute("id","client")
-  template.setAttribute("class","last-box")
+  
 
   template.innerHTML=`<p id="clientname">${name}</p>` 
   document.getElementById("list").append(template)
-  scrollToBottom()
+  
+   let elm = document.querySelector('#container-message').lastElementChild;
+  elm.scrollIntoView();
+
+
+
 })
  
 info.onclick=function(){
@@ -89,7 +100,7 @@ closes.onclick=function(){
 
  bigbox.onclick=function(){
   box.style.bottom="0%"
-   containermessage.style.bottom="0%"
+  containermessage.style.paddingBottom="100px"
    bigbox.style.display="none"
  }
 
@@ -121,7 +132,12 @@ boxMessage.setAttribute("id", "two");
 boxMessage.setAttribute("class", "last-box")
 boxMessage.innerHTML= `<div id="text2">${messageContent}</div><div id="initial2">${personename.charAt(0)}</div>`  
 document.getElementById("container-message").append(boxMessage);
-scrollToBottom()
+ 
+let elms = document.querySelector('#container-message').lastElementChild;
+  elms.scrollIntoView();
+  containermessage.style.paddingBottom="100px"
+
+
  }
 
 
@@ -132,7 +148,12 @@ boxMessageone.setAttribute("id", "one");
 boxMessageone.setAttribute("class", "last-box")
 boxMessageone.innerHTML=`<div id="initial1">${data.name.charAt(0)}</div><div id="text">${data.msg}</div>`
 document.getElementById("container-message").append(boxMessageone)
- 
+
+
+let elms = document.querySelector('#container-message').lastElementChild;
+  elms.scrollIntoView();
+  containermessage.style.paddingBottom="100px"
+
  
 })
 
@@ -160,15 +181,15 @@ box.style.bottom="0%"
 function myFunction(x) {
   if (x.matches) { 
    sendmessage.addEventListener("focus", function(){
-box.style.marginBottom="0%";
+box.style.bottom="0%";
 
   }) }
    else {
 
 sendmessage.addEventListener("focus", function(){
   bigbox.style.display="flex"
-   box.style.bottom="0%"
-   containermessage.style.bottom="0%"
+   box.style.bottom="42%"
+   containermessage.style.paddingBottom="370px"
    
 })
   	
@@ -180,10 +201,7 @@ let x = window.matchMedia("(min-width:1100px)")
 myFunction(x)
 
   
-function scrollToBottom() {
-let lastbox = document.querySelector('.last-box').lastElementChild;
- lastbox.scrollIntoView();
-}
+
 
 
 
