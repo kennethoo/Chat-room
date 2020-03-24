@@ -26,9 +26,9 @@ socket.on("your-room", room=>{
  
 create.addEventListener("click",function(e){
   newName = nameNew.value.trim() ;
-  if (newName.length==0) {
+  if (newName.length==0||navigator.onLine!==true) {
 e.preventDefault()
-messageone.innerText="Username must be fill"
+messageone.innerText="Username must be fill or connection invalid"
 
   }
   else{
@@ -52,9 +52,9 @@ join.addEventListener("click", function(e){
    newromId = roomid.value.trim() ;
 
 
-if (newuser.length==0||newromId.length==0 || ok=="bad") {
+if (newuser.length==0||newromId.length==0 || ok=="bad"||navigator.onLine!==true) {
   e.preventDefault()
-  messagetwo.innerText="Username must be fill or room name invalid"
+  messagetwo.innerText="Username must be fill or room name invalid or connection invalid"
 }
 else{
 socket.emit("jointe", newromId)
