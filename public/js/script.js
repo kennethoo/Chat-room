@@ -127,10 +127,18 @@ let take
 
 
  function Mymessage(messageContent){
+  let d = new Date()
+let hours= d.getHours();
+let minute= d.getMinutes()
+
 let boxMessage   = document.createElement("div")
 boxMessage.setAttribute("id", "two");
 boxMessage.setAttribute("class", "last-box")
-boxMessage.innerHTML= `<div id="text2">${messageContent}</div><div id="initial2">${personename.charAt(0)}</div>`  
+boxMessage.innerHTML= `<div id="text2">${messageContent}</div><div id="initial2">${personename.charAt(0)}</div>
+      <div id="date">
+        <p id="hour">${hours}:</p>
+        <p id="minute">${minute}</p>
+      </div>`  
 document.getElementById("container-message").append(boxMessage);
  
 let elms = document.querySelector('#container-message').lastElementChild;
@@ -138,15 +146,25 @@ let elms = document.querySelector('#container-message').lastElementChild;
   containermessage.style.paddingBottom="100px"
 
 
+    
+       
  }
 
 
 socket.on("message",data=>{
 
+let d = new Date()
+let hours= d.getHours();
+let minute= d.getMinutes()
+
+
 let boxMessageone  = document.createElement("div")
 boxMessageone.setAttribute("id", "one");
 boxMessageone.setAttribute("class", "last-box")
-boxMessageone.innerHTML=`<div id="initial1">${data.name.charAt(0)}</div><div id="text">${data.msg}</div>`
+boxMessageone.innerHTML=`<div id="date">
+        <p id="hour">${hours}:</p>
+        <p id="minute">${minute}</p>
+      </div><div id="initial1">${data.name.charAt(0)}</div><div id="text">${data.msg}</div>`
 document.getElementById("container-message").append(boxMessageone)
 
 
