@@ -120,7 +120,7 @@ roomid.addEventListener("focusout",down)
 
 function up(){
 	formOne.style.marginTop="0%"
-	console.log("f")
+	
 }
 function down(){
 	formOne.style.marginTop="20%"
