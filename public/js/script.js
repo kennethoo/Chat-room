@@ -58,10 +58,13 @@ socket.on("this-room", roominfo=>{
 
   socket.emit("new-room",roominfo )
 })
+
+
 share.addEventListener("click",function(){
 if (navigator.share) { 
    navigator.share({
-       roomId:"code"
+        title: 'code',
+      url: 'code'
     }).then(() => {
       console.log('Thanks for sharing!');
     })
