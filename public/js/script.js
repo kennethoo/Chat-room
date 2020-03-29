@@ -193,7 +193,7 @@ let elms = document.querySelector('#container-message').lastElementChild;
 
 send.addEventListener("click", function(){
  
-   bigbox.style.display="none"
+  
 const messageContent = sendmessage.value;
   Mymessage(messageContent,personename)
 sendmessage.value=""
