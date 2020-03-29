@@ -64,7 +64,7 @@ share.addEventListener("click",function(){
 if (navigator.share) { 
    navigator.share({
         title: 'code',
-      url: 'code'
+      url: '123'
     }).then(() => {
       console.log('Thanks for sharing!');
     })
@@ -203,9 +203,7 @@ send.addEventListener("click", function(){
 const messageContent = sendmessage.value;
   Mymessage(messageContent,personename)
 sendmessage.value=""
-
-box.style.bottom="0%"
-   containermessage.style.bottom="0%"
+  
 
   socket.emit("message", messageContent)
 
@@ -216,27 +214,27 @@ box.style.bottom="0%"
 
 
 
-function myFunction(x) {
-  if (x.matches) { 
-   sendmessage.addEventListener("focus", function(){
-box.style.bottom="0%";
+//function myFunction(x) {
+  //if (x.matches) { 
+ //  sendmessage.addEventListener("focus", function(){
+//box.style.bottom="0%";
 
-  }) }
-   else {
+ // }) }
+ //  else {
 
-sendmessage.addEventListener("focus", function(){
-  bigbox.style.display="flex"
-   box.style.bottom="42%"
-   containermessage.style.paddingBottom="370px"
+//sendmessage.addEventListener("focus", function(){
+ // bigbox.style.display="flex"
+ //  box.style.bottom="0%"
+  // containermessage.style.paddingBottom="370px"
    
-})
+//})
   	
 
-}
-}
-let x = window.matchMedia("(min-width:1100px)")
+//}
+//}
+//let x = window.matchMedia("(min-width:1100px)")
 
-myFunction(x)
+//myFunction(x)
 
   
 

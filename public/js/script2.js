@@ -107,28 +107,27 @@ function checkk(){
 
 
 
-function myFunction(x) {
-  if (x.matches) { 
+//function myFunction(x) {
+  //if (x.matches) { 
  
-nameNew.addEventListener("focus", up)
-userJoin.addEventListener("focus", up )
-roomid.addEventListener("focus", up)
+//nameNew.addEventListener("focus", up)
+//userJoin.addEventListener("focus", up )
+//roomid.addEventListener("focus", up)
 
-nameNew.addEventListener("focusout",down)
-userJoin.addEventListener("focusout", down)
-roomid.addEventListener("focusout",down)
+//nameNew.addEventListener("focusout",down)
+//userJoin.addEventListener("focusout", down)
+//roomid.addEventListener("focusout",down)
 
-function up(){
-	formOne.style.marginTop="0%"
+//function up(){
+	//formOne.style.marginTop="0%"
 	
-}
-function down(){
-	formOne.style.marginTop="20%"
-}
+//}
+//function down(){
+	//formOne.style.marginTop="0%"
+//}
   
   	
-}
-}
-let x = window.matchMedia("(max-width:1000px)")
+//}
+//}
+//
 
-myFunction(x)
