@@ -379,6 +379,17 @@ z-index: 2000;
   display: none;
 
 }
+#share{
+   background-image:url(img/share.png);
+  width: 30px;
+  height: 30px;
+  
+  position: absolute;
+  right: 30px;
+   background-size: cover;
+    -webkit-background-size:cover;
+    background-position: center center;
+}
 #information{
     display:flex;
     overflow-x: hidden;

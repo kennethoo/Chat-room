@@ -21,6 +21,8 @@ let info = document.getElementById("info")
  let information = document.getElementById("information")
  let closes = document.querySelector(".closes")
  let wapper =document.getElementById("wapper")
+ let share = document.getElementById("share")
+
  let personename
 
 leave.addEventListener("click",function(){
@@ -53,7 +55,20 @@ let template= document.createElement("div")
 socket.on("this-room", roominfo=>{
 
   document.getElementById("roomId").innerText=roominfo
+
   socket.emit("new-room",roominfo )
+})
+share.addEventListener("click",function(){
+if (navigator.share) {
+console.log("yes")
+navigator.share({
+  roomId:`${document.getElementById("roomId").innerText}`
+})
+}else{
+  
+console.log("no")
+}
+
 })
 
 socket.on("new-persone", useer=>{

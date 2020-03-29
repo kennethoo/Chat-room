@@ -19,6 +19,7 @@ let ok
 let userJoin = document.getElementById("user-Join")
 let ro="ro"
 
+
 window.addEventListener("load",function(){
 
 socket.emit("create-Room",ro)
@@ -92,9 +93,42 @@ function checkk(){
 	
 		})
     
-	
 
-	
-  
 		
 }
+
+
+
+
+
+
+
+
+
+
+
+function myFunction(x) {
+  if (x.matches) { 
+ 
+nameNew.addEventListener("focus", up)
+userJoin.addEventListener("focus", up )
+roomid.addEventListener("focus", up)
+
+nameNew.addEventListener("focusout",down)
+userJoin.addEventListener("focusout", down)
+roomid.addEventListener("focusout",down)
+
+function up(){
+	formOne.style.marginTop="0%"
+	console.log("f")
+}
+function down(){
+	formOne.style.marginTop="20%"
+}
+  
+  	
+}
+}
+let x = window.matchMedia("(max-width:1000px)")
+
+myFunction(x)

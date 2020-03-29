@@ -10,7 +10,7 @@
 <div id="content">
  <div class="box" >
   
-   <h1 >Just chat</h1>
+
   <form id="formOne" class="menu" action="/room">
    <input type="text" name="room" id="roomname">
    <input type="text" name="Username" id="nameNew" placeholder="Username"> 
@@ -26,8 +26,8 @@
  <p id="messagetwo"></p> 
  <input type="Submit" id="join" value="Join">
 </form>
-</div>
 
+</div>
 </div>
 
 
@@ -184,6 +184,11 @@ border-bottom-left-radius: 20%;
 
 @media only screen and (max-width: 1000px){
 
+#inside{
+ 
+  height:auto;
+  position: relative;
+}
 
   .box h1 {
    text-align: left
@@ -261,7 +266,7 @@ background: rgb(52,73,94,0.8);
  }
  #formTwo{
    height: 46%;
-
+transition: 0.5s ease ;
 
 display: flex;
 flex-direction: column;
@@ -273,7 +278,9 @@ align-items: center;
  }
  #formOne{
   height: 26%;
-
+transition: 0.5s ease ;
+position: relative;
+margin-top: 20%;
 display:flex;
 flex-direction: column;
 justify-content: space-around;
