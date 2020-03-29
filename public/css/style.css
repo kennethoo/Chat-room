@@ -171,13 +171,7 @@ color: white;
 background:#263844;*/
 background: #000;
 }
-#bigbox{
-    width: 100%;
-    height: 100vh;
-background:  transparent;
-display: none;
-position: fixed;
-}
+
 #text2{
 
 

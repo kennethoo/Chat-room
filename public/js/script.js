@@ -9,7 +9,7 @@ let leave= document.getElementById("leave")
 let newroom = document.getElementById("newroom")
    let createroom= document.getElementById("createroom")
    let imgbefore = document.getElementById("imgbefore")
- let bigbox =document.getElementById("bigbox")
+
  let one =document.getElementById("one")
  let text= document.getElementById("text")
 const send = document.getElementById("send")
@@ -117,12 +117,6 @@ closes.onclick=function(){
 
  
  
-
- bigbox.onclick=function(){
-  box.style.bottom="0%"
-  containermessage.style.paddingBottom="100px"
-   bigbox.style.display="none"
- }
 
  people.onclick=function(){
   list.style.width="100%"
