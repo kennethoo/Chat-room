@@ -156,7 +156,7 @@ document.getElementById("container-message").append(boxMessage);
 let elms = document.querySelector('#container-message').lastElementChild;
   elms.scrollIntoView();
   
-
+containermessage.style.paddingBottom="100px"
 
     
        
@@ -183,7 +183,7 @@ document.getElementById("container-message").append(boxMessageone)
 let elms = document.querySelector('#container-message').lastElementChild;
   elms.scrollIntoView();
  
-
+containermessage.style.paddingBottom="100px"
  
 })
 
