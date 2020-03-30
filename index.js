@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const server = require("http").Server(app)
+app.use(express.urlencoded({ extended:true}))
 const io = require("socket.io")(server)
 let users={}
 let rooms =["baby"]
