@@ -4,6 +4,9 @@
 font-family: arial;
 }
 
+html{
+    scroll-behavior: smooth;
+  }
 body{
 background-color: #263844
 
