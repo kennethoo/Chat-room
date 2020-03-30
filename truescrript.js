@@ -56,10 +56,15 @@ socket.on("this-room", roominfo=>{
 
   socket.emit("new-room",roominfo )
 })
-
+if(navigator.share){
+  document.getElementById("info").innerText="i"
+}else{
+  document.getElementById("info").innerText="n"
+}
 
 share.addEventListener("click",function(){
-if (navigator.share) { 
+if (navigator.share) {
+ 
    navigator.share({
         title: 'code',
       url: '123'
@@ -67,6 +72,7 @@ if (navigator.share) {
       console.log('Thanks for sharing!');
     })
     .catch(console.error);
+
 }else{
   
 console.log("no")
