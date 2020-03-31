@@ -52,22 +52,25 @@ let template= document.createElement("div")
 
 socket.on("this-room", roominfo=>{
 
-  document.getElementById("roomId").innerText=roominfo
+  document.getElementById("roomId").value=roominfo
 
   socket.emit("new-room",roominfo )
 })
-if(navigator.share){
-  document.getElementById("info").innerText="i"
-}else{
-  document.getElementById("info").innerText="n"
-}
+
 
 share.addEventListener("click",function(){
+
+  var copyText = document.getElementById("roomId");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert(copyText.value);
+
 if (navigator.share) {
  
    navigator.share({
-        title: 'code',
-      url: '123'
+    title: 'code',
+      url: document.getElementById("roomId").value
     }).then(() => {
       console.log('Thanks for sharing!');
     })
@@ -114,8 +117,8 @@ information.style.display="flex"
 modal.style.display="inline-block"
 }
 closes.onclick=function(){
-	information.style.display="none"
-	modal.style.display="none"
+  information.style.display="none"
+  modal.style.display="none"
 }
 
 
@@ -226,7 +229,7 @@ sendmessage.value=""
   // containermessage.style.paddingBottom="370px"
    
 //})
-  	
+    
 
 //}
 //}

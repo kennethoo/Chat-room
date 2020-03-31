@@ -151,7 +151,8 @@ background-color: #0e1e24;*/
  border:0;
  background:none;
  display: block;
- margin: 20px;
+ margin-top: 20px;
+  margin-bottom: 20px;
  text-align: center;
  border:2px solid #3498db;
  padding: 15px 11px;
@@ -344,7 +345,12 @@ display: flex;
 }
 
 }
-
+@media only screen and (max-height: 568px){
+  #nameNew{
+margin-top:-30px;
+  }
+  
+}
 </style>
   
   <script type="text/javascript" src="/socket.io/socket.io.js"></script>
