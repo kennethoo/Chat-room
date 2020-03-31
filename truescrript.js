@@ -64,7 +64,7 @@ share.addEventListener("click",function(){
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
-  alert(copyText.value);
+  alert("Copy " + copyText.value);
 
 if (navigator.share) {
  
@@ -228,6 +228,7 @@ sendmessage.value=""
  //  box.style.bottom="0%"
   // containermessage.style.paddingBottom="370px"
    
+
 //})
     
 
