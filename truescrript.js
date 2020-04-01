@@ -65,7 +65,7 @@ share.addEventListener("click",function(){
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
   alert("Copy " + copyText.value);
-
+ document.getElementById('roomId').setAttribute("readonly","readonly")
 if (navigator.share) {
  
    navigator.share({

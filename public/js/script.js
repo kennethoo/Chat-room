@@ -1,1 +1,245 @@
-var _0xaf33=["\x6C\x69\x73\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x2E\x63\x6C\x6F\x73\x65\x73\x6C\x69\x73\x74","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x70\x65\x6F\x70\x6C\x65","\x6C\x65\x61\x76\x65","\x55\x73\x65\x72\x72\x6F\x6F\x6D","\x6E\x65\x77\x72\x6F\x6F\x6D","\x63\x72\x65\x61\x74\x65\x72\x6F\x6F\x6D","\x69\x6D\x67\x62\x65\x66\x6F\x72\x65","\x6F\x6E\x65","\x74\x65\x78\x74","\x73\x65\x6E\x64","\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72\x2D\x6D\x65\x73\x73\x61\x67\x65","\x62\x6F\x78\x2D\x73\x65\x6E\x64","\x73\x65\x6E\x64\x2D\x6D\x65\x73\x73\x61\x67\x65","\x6D\x6F\x64\x61\x6C","\x69\x6E\x66\x6F","\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E","\x2E\x63\x6C\x6F\x73\x65\x73","\x77\x61\x70\x70\x65\x72","\x73\x68\x61\x72\x65","\x63\x6C\x69\x63\x6B","\x2F","\x72\x65\x70\x6C\x61\x63\x65","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x75\x73\x65\x72\x73\x2D\x64\x69\x63\x6F\x6E\x6E\x65\x63\x74\x65\x64","\x64\x69\x76","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x69\x64","\x74\x68\x72\x65\x65","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x3C\x70\x20\x69\x64\x3D\x22\x74\x65\x78\x74\x33\x22\x3E","\x3A\x20\x6C\x65\x66\x74\x3C\x2F\x70\x3E","\x61\x70\x70\x65\x6E\x64","\x63\x6C\x69\x65\x6E\x74","\x3C\x70\x20\x69\x64\x3D\x22\x63\x6C\x69\x65\x6E\x74\x6E\x61\x6D\x65\x22\x3E","\x20\x6C\x65\x66\x74\x3C\x2F\x70\x3E","\x6C\x61\x73\x74\x45\x6C\x65\x6D\x65\x6E\x74\x43\x68\x69\x6C\x64","\x23\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72\x2D\x6D\x65\x73\x73\x61\x67\x65","\x73\x63\x72\x6F\x6C\x6C\x49\x6E\x74\x6F\x56\x69\x65\x77","\x6F\x6E","\x74\x68\x69\x73\x2D\x72\x6F\x6F\x6D","\x76\x61\x6C\x75\x65","\x72\x6F\x6F\x6D\x49\x64","\x6E\x65\x77\x2D\x72\x6F\x6F\x6D","\x65\x6D\x69\x74","\x73\x65\x6C\x65\x63\x74","\x73\x65\x74\x53\x65\x6C\x65\x63\x74\x69\x6F\x6E\x52\x61\x6E\x67\x65","\x63\x6F\x70\x79","\x65\x78\x65\x63\x43\x6F\x6D\x6D\x61\x6E\x64","\x43\x6F\x70\x79\x20","\x65\x72\x72\x6F\x72","\x63\x61\x74\x63\x68","\x54\x68\x61\x6E\x6B\x73\x20\x66\x6F\x72\x20\x73\x68\x61\x72\x69\x6E\x67\x21","\x6C\x6F\x67","\x74\x68\x65\x6E","\x63\x6F\x64\x65","\x6E\x6F","\x6E\x65\x77\x2D\x70\x65\x72\x73\x6F\x6E\x65","\x70\x65\x72\x73\x6F\x6E\x65","\x6E\x65\x77\x2D\x75\x73\x65\x72","\x20\x3A\x20\x6A\x6F\x69\x6E\x3C\x2F\x70\x3E","\x3C\x2F\x70\x3E","\x6F\x6E\x63\x6C\x69\x63\x6B","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x66\x6C\x65\x78","\x69\x6E\x6C\x69\x6E\x65\x2D\x62\x6C\x6F\x63\x6B","\x6E\x6F\x6E\x65","\x77\x69\x64\x74\x68","\x31\x30\x30\x25","\x30\x25","\x6E\x61\x6D\x65\x2D\x75\x73\x65\x72","\x67\x65\x74\x48\x6F\x75\x72\x73","\x67\x65\x74\x4D\x69\x6E\x75\x74\x65\x73","\x74\x77\x6F","\x63\x6C\x61\x73\x73","\x6C\x61\x73\x74\x2D\x62\x6F\x78","\x3C\x64\x69\x76\x20\x69\x64\x3D\x22\x74\x65\x78\x74\x32\x22\x3E","\x3C\x2F\x64\x69\x76\x3E\x3C\x64\x69\x76\x20\x69\x64\x3D\x22\x69\x6E\x69\x74\x69\x61\x6C\x32\x22\x3E","\x63\x68\x61\x72\x41\x74","\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x69\x64\x3D\x22\x64\x61\x74\x65\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x70\x20\x69\x64\x3D\x22\x68\x6F\x75\x72\x22\x3E","\x3A\x3C\x2F\x70\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x70\x20\x69\x64\x3D\x22\x6D\x69\x6E\x75\x74\x65\x22\x3E","\x3C\x2F\x70\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E","\x70\x61\x64\x64\x69\x6E\x67\x42\x6F\x74\x74\x6F\x6D","\x31\x30\x30\x70\x78","\x6D\x65\x73\x73\x61\x67\x65","\x3C\x64\x69\x76\x20\x69\x64\x3D\x22\x64\x61\x74\x65\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x70\x20\x69\x64\x3D\x22\x68\x6F\x75\x72\x22\x3E","\x3C\x2F\x70\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x3C\x64\x69\x76\x20\x69\x64\x3D\x22\x69\x6E\x69\x74\x69\x61\x6C\x31\x22\x3E","\x6E\x61\x6D\x65","\x3C\x2F\x64\x69\x76\x3E\x3C\x64\x69\x76\x20\x69\x64\x3D\x22\x74\x65\x78\x74\x22\x3E","\x6D\x73\x67","\x3C\x2F\x64\x69\x76\x3E",""];let socket=io();let list=document[_0xaf33[1]](_0xaf33[0]);let closelist=document[_0xaf33[3]](_0xaf33[2]);let people=document[_0xaf33[1]](_0xaf33[4]);let leave=document[_0xaf33[1]](_0xaf33[5]);let username=document[_0xaf33[1]](_0xaf33[6]);let newroom=document[_0xaf33[1]](_0xaf33[7]);let createroom=document[_0xaf33[1]](_0xaf33[8]);let imgbefore=document[_0xaf33[1]](_0xaf33[9]);let one=document[_0xaf33[1]](_0xaf33[10]);let text=document[_0xaf33[1]](_0xaf33[11]);const send=document[_0xaf33[1]](_0xaf33[12]);let containermessage=document[_0xaf33[1]](_0xaf33[13]);let box=document[_0xaf33[1]](_0xaf33[14]);let sendmessage=document[_0xaf33[1]](_0xaf33[15]);let modal=document[_0xaf33[1]](_0xaf33[16]);let info=document[_0xaf33[1]](_0xaf33[17]);let information=document[_0xaf33[1]](_0xaf33[18]);let closes=document[_0xaf33[3]](_0xaf33[19]);let wapper=document[_0xaf33[1]](_0xaf33[20]);let share=document[_0xaf33[1]](_0xaf33[21]);let personename;leave[_0xaf33[25]](_0xaf33[22],function(){location[_0xaf33[24]](_0xaf33[23])});socket[_0xaf33[42]](_0xaf33[26],(_0x9be7x17)=>{let _0x9be7x18=document[_0xaf33[28]](_0xaf33[27]);_0x9be7x18[_0xaf33[31]](_0xaf33[29],_0xaf33[30]);_0x9be7x18[_0xaf33[32]]= `${_0xaf33[33]}${_0x9be7x17}${_0xaf33[34]}`;document[_0xaf33[1]](_0xaf33[13])[_0xaf33[35]](_0x9be7x18);let _0x9be7x19=document[_0xaf33[28]](_0xaf33[27]);_0x9be7x19[_0xaf33[31]](_0xaf33[29],_0xaf33[36]);_0x9be7x19[_0xaf33[32]]= `${_0xaf33[37]}${_0x9be7x17}${_0xaf33[38]}`;document[_0xaf33[1]](_0xaf33[0])[_0xaf33[35]](_0x9be7x19);let _0x9be7x1a=document[_0xaf33[3]](_0xaf33[40])[_0xaf33[39]];_0x9be7x1a[_0xaf33[41]]()});socket[_0xaf33[42]](_0xaf33[43],(_0x9be7x1b)=>{document[_0xaf33[1]](_0xaf33[45])[_0xaf33[44]]= _0x9be7x1b;socket[_0xaf33[47]](_0xaf33[46],_0x9be7x1b)});share[_0xaf33[25]](_0xaf33[22],function(){var _0x9be7x1c=document[_0xaf33[1]](_0xaf33[45]);_0x9be7x1c[_0xaf33[48]]();_0x9be7x1c[_0xaf33[49]](0,99999);document[_0xaf33[51]](_0xaf33[50]);alert(_0xaf33[52]+ _0x9be7x1c[_0xaf33[44]]);if(navigator[_0xaf33[21]]){navigator[_0xaf33[21]]({title:_0xaf33[58],url:document[_0xaf33[1]](_0xaf33[45])[_0xaf33[44]]})[_0xaf33[57]](()=>{console[_0xaf33[56]](_0xaf33[55])})[_0xaf33[54]](console[_0xaf33[53]])}else {console[_0xaf33[56]](_0xaf33[59])}});socket[_0xaf33[42]](_0xaf33[60],(_0x9be7x1d)=>{personename= _0x9be7x1d;socket[_0xaf33[47]](_0xaf33[61],_0x9be7x1d)});socket[_0xaf33[42]](_0xaf33[62],(_0x9be7x17)=>{let _0x9be7x18=document[_0xaf33[28]](_0xaf33[27]);_0x9be7x18[_0xaf33[31]](_0xaf33[29],_0xaf33[30]);_0x9be7x18[_0xaf33[32]]= `${_0xaf33[33]}${_0x9be7x17}${_0xaf33[63]}`;document[_0xaf33[1]](_0xaf33[13])[_0xaf33[35]](_0x9be7x18);let _0x9be7x19=document[_0xaf33[28]](_0xaf33[27]);_0x9be7x19[_0xaf33[31]](_0xaf33[29],_0xaf33[36]);_0x9be7x19[_0xaf33[32]]= `${_0xaf33[37]}${_0x9be7x17}${_0xaf33[64]}`;document[_0xaf33[1]](_0xaf33[0])[_0xaf33[35]](_0x9be7x19);let _0x9be7x1e=document[_0xaf33[3]](_0xaf33[40])[_0xaf33[39]];_0x9be7x1e[_0xaf33[41]]()});info[_0xaf33[65]]= function(){information[_0xaf33[67]][_0xaf33[66]]= _0xaf33[68];modal[_0xaf33[67]][_0xaf33[66]]= _0xaf33[69]};closes[_0xaf33[65]]= function(){information[_0xaf33[67]][_0xaf33[66]]= _0xaf33[70];modal[_0xaf33[67]][_0xaf33[66]]= _0xaf33[70]};people[_0xaf33[65]]= function(){list[_0xaf33[67]][_0xaf33[71]]= _0xaf33[72]};closelist[_0xaf33[65]]= function(){list[_0xaf33[67]][_0xaf33[71]]= _0xaf33[73]};let take;socket[_0xaf33[42]](_0xaf33[74],(_0x9be7x20)=>{take= _0x9be7x20});function Mymessage(_0x9be7x22){let _0x9be7x23= new Date();let _0x9be7x24=_0x9be7x23[_0xaf33[75]]();let _0x9be7x25=_0x9be7x23[_0xaf33[76]]();let _0x9be7x26=document[_0xaf33[28]](_0xaf33[27]);_0x9be7x26[_0xaf33[31]](_0xaf33[29],_0xaf33[77]);_0x9be7x26[_0xaf33[31]](_0xaf33[78],_0xaf33[79]);_0x9be7x26[_0xaf33[32]]= `${_0xaf33[80]}${_0x9be7x22}${_0xaf33[81]}${personename[_0xaf33[82]](0)}${_0xaf33[83]}${_0x9be7x24}${_0xaf33[84]}${_0x9be7x25}${_0xaf33[85]}`;document[_0xaf33[1]](_0xaf33[13])[_0xaf33[35]](_0x9be7x26);let _0x9be7x1a=document[_0xaf33[3]](_0xaf33[40])[_0xaf33[39]];_0x9be7x1a[_0xaf33[41]]();containermessage[_0xaf33[67]][_0xaf33[86]]= _0xaf33[87]}socket[_0xaf33[42]](_0xaf33[88],(_0x9be7x27)=>{let _0x9be7x23= new Date();let _0x9be7x24=_0x9be7x23[_0xaf33[75]]();let _0x9be7x25=_0x9be7x23[_0xaf33[76]]();let _0x9be7x18=document[_0xaf33[28]](_0xaf33[27]);_0x9be7x18[_0xaf33[31]](_0xaf33[29],_0xaf33[10]);_0x9be7x18[_0xaf33[31]](_0xaf33[78],_0xaf33[79]);_0x9be7x18[_0xaf33[32]]= `${_0xaf33[89]}${_0x9be7x24}${_0xaf33[84]}${_0x9be7x25}${_0xaf33[90]}${_0x9be7x27[_0xaf33[91]][_0xaf33[82]](0)}${_0xaf33[92]}${_0x9be7x27[_0xaf33[93]]}${_0xaf33[94]}`;document[_0xaf33[1]](_0xaf33[13])[_0xaf33[35]](_0x9be7x18);let _0x9be7x1a=document[_0xaf33[3]](_0xaf33[40])[_0xaf33[39]];_0x9be7x1a[_0xaf33[41]]();containermessage[_0xaf33[67]][_0xaf33[86]]= _0xaf33[87]});send[_0xaf33[25]](_0xaf33[22],function(){const _0x9be7x22=sendmessage[_0xaf33[44]];Mymessage(_0x9be7x22,personename);sendmessage[_0xaf33[44]]= _0xaf33[95];socket[_0xaf33[47]](_0xaf33[88],_0x9be7x22)})
+let socket = io()
+let list = document.getElementById("list")
+let closelist= document.querySelector(".closeslist")
+let people= document.getElementById("people")
+let leave= document.getElementById("leave")
+   let username = document.getElementById("Userroom")
+let newroom = document.getElementById("newroom")
+   let createroom= document.getElementById("createroom")
+   let imgbefore = document.getElementById("imgbefore")
+
+ let one =document.getElementById("one")
+ let text= document.getElementById("text")
+const send = document.getElementById("send")
+let containermessage = document.getElementById("container-message")
+let box = document.getElementById("box-send")
+let sendmessage = document.getElementById("send-message")
+let modal =document.getElementById("modal")
+let info = document.getElementById("info")
+ let information = document.getElementById("information")
+ let closes = document.querySelector(".closes")
+ let wapper =document.getElementById("wapper")
+ let share = document.getElementById("share")
+
+ let personename
+
+leave.addEventListener("click",function(){
+location.replace("/")
+})
+
+socket.on("users-diconnected", name=>{
+
+let boxMessageone  = document.createElement("div")
+boxMessageone.setAttribute("id", "three");
+boxMessageone.innerHTML=`<p id="text3">${name}: left</p>`
+document.getElementById("container-message").append(boxMessageone)
+
+let template= document.createElement("div")
+  template.setAttribute("id","client")
+
+  template.innerHTML=`<p id="clientname">${name} left</p>` 
+  document.getElementById("list").append(template)
+
+
+  let elms = document.querySelector('#container-message').lastElementChild;
+  elms.scrollIntoView();
+  
+
+
+
+
+})
+
+socket.on("this-room", roominfo=>{
+
+  document.getElementById("roomId").value=roominfo
+
+  socket.emit("new-room",roominfo )
+})
+
+
+share.addEventListener("click",function(){
+
+  var copyText = document.getElementById("roomId");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copy " + copyText.value);
+ document.getElementById('roomId').setAttribute("readonly","readonly")
+if (navigator.share) {
+ 
+   navigator.share({
+    title: 'code',
+      url: document.getElementById("roomId").value
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+
+}else{
+  
+console.log("no")
+}
+
+})
+
+socket.on("new-persone", useer=>{
+  personename=useer
+
+socket.emit("persone", useer)
+
+ })
+socket.on("new-user", name=>{
+
+
+let boxMessageone  = document.createElement("div")
+boxMessageone.setAttribute("id", "three");
+boxMessageone.innerHTML=`<p id="text3">${name} : join</p>`
+document.getElementById("container-message").append(boxMessageone)
+
+
+let template= document.createElement("div")
+  template.setAttribute("id","client")
+  
+
+  template.innerHTML=`<p id="clientname">${name}</p>` 
+  document.getElementById("list").append(template)
+  
+   let elm = document.querySelector('#container-message').lastElementChild;
+  elm.scrollIntoView();
+
+
+
+})
+ 
+info.onclick=function(){
+information.style.display="flex"
+modal.style.display="inline-block"
+}
+closes.onclick=function(){
+  information.style.display="none"
+  modal.style.display="none"
+}
+
+
+ 
+ 
+
+ people.onclick=function(){
+  list.style.width="100%"
+  
+ }
+
+ closelist.onclick=function(){
+  list.style.width="0%"
+
+ }
+
+ 
+ 
+
+
+
+let take
+ socket.on("name-user", usenn=>{
+ take = usenn
+
+    })
+
+
+ function Mymessage(messageContent){
+  let d = new Date()
+let hours= d.getHours();
+let minute= d.getMinutes()
+
+let boxMessage   = document.createElement("div")
+boxMessage.setAttribute("id", "two");
+boxMessage.setAttribute("class", "last-box")
+boxMessage.innerHTML= `<div id="text2">${messageContent}</div><div id="initial2">${personename.charAt(0)}</div>
+      <div id="date">
+        <p id="hour">${hours}:</p>
+        <p id="minute">${minute}</p>
+      </div>`  
+document.getElementById("container-message").append(boxMessage);
+ 
+let elms = document.querySelector('#container-message').lastElementChild;
+  elms.scrollIntoView();
+  
+containermessage.style.paddingBottom="100px"
+
+    
+       
+ }
+
+
+socket.on("message",data=>{
+
+let d = new Date()
+let hours= d.getHours();
+let minute= d.getMinutes()
+
+
+let boxMessageone  = document.createElement("div")
+boxMessageone.setAttribute("id", "one");
+boxMessageone.setAttribute("class", "last-box")
+boxMessageone.innerHTML=`<div id="date">
+        <p id="hour">${hours}:</p>
+        <p id="minute">${minute}</p>
+      </div><div id="initial1">${data.name.charAt(0)}</div><div id="text">${data.msg}</div>`
+document.getElementById("container-message").append(boxMessageone)
+
+
+let elms = document.querySelector('#container-message').lastElementChild;
+  elms.scrollIntoView();
+ 
+containermessage.style.paddingBottom="100px"
+ 
+})
+
+
+
+send.addEventListener("click", function(){
+ 
+  
+const messageContent = sendmessage.value;
+  Mymessage(messageContent,personename)
+sendmessage.value=""
+  
+
+  socket.emit("message", messageContent)
+
+})
+
+
+
+
+
+
+//function myFunction(x) {
+  //if (x.matches) { 
+ //  sendmessage.addEventListener("focus", function(){
+//box.style.bottom="0%";
+
+ // }) }
+ //  else {
+
+//sendmessage.addEventListener("focus", function(){
+ // bigbox.style.display="flex"
+ //  box.style.bottom="0%"
+  // containermessage.style.paddingBottom="370px"
+   
+
+//})
+    
+
+//}
+//}
+//let x = window.matchMedia("(min-width:1100px)")
+
+//myFunction(x)
+
+  
+
+
+
+
