@@ -19,7 +19,7 @@ let PORT  = process.env.PORT || 5000
 "i","J","j","K","k","L","l","M","m",
 "N","n","O","o","P","p","Q","q","R"
 ,"r","T","t","U","u","W","w","X","x",
-"Y","y","Z","z","#","@","!","$","&"]
+"Y","y","Z","z","#","@","!","$","&",]
 for(var i= 0; i<8; i++){
 roomName = roomName + mixName[Math.floor(Math.random()*mixName.length)]
 
