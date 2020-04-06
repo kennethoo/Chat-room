@@ -35,13 +35,17 @@
 
 
 <style type="text/css">
-
-   body {
+html{
+  background: rgba(42,46,54,1);;
+}
+body{
   margin:0;
   padding:0;
+  box-sizing: border-box;
   font-family:sans-serif; 
  background:#34495E; 
- background: linear-gradient(42deg, rgba(42,46,54,1) 0%, rgba(97,107,125,1) 100%);
+ width: 100vw;
+background: linear-gradient(42deg, rgba(42,46,54,1) 0%, rgba(97,107,125,1) 100%);
  }
  h3{
   color: white
@@ -79,13 +83,13 @@ font-size: 15px;
 }
  .box {
 
-  width:340px;
+  width:320px;
   padding:0px;
   position:absolute;
    top :50%;
    left:50%;
    transform:translate(-50%,-50%);
-   background:  #34495E;
+  background:#34495E;   
 
    text-align: center;
   
@@ -151,8 +155,7 @@ background-color: #0e1e24;*/
  border:0;
  background:none;
  display: block;
- margin-top: 20px;
-  margin-bottom: 20px;
+margin: 20px;
  text-align: center;
  border:2px solid #3498db;
  padding: 15px 11px;
@@ -201,46 +204,31 @@ border-bottom-left-radius: 20%;
  }
   #room{
 
-     border: 0;
-   
-     background: rgb(0,0,0,0.5);
  
   }
 
   #room:focus{
    
   
-   background: none;
-     
-    border:2px solid #2ecc71 ;
    
   }
   #user-Join{
-     border: 0;
-  background: rgb(0,0,0,0.5);
+   
      
 
   }
   #user-Join:focus{
  
    
-   background: none;
-     
-    border:2px solid #2ecc71 ;
+
 
   }
   #create{
-    border: 0;
    
-  
- box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-         
-/*background-color: #4D5656;*/
-background:#191919; 
   }
 
   #create:hover{
-    background: #C0392B;
+   
  
 
   }
@@ -250,25 +238,21 @@ background:#191919;
 
     #nameNew{
     
-    border: 0;
-   background: rgba(0,0,0,0.5);
+ 
 
     }
     #nameNew:focus{
   
-   background: none;
-     
-    border:2px solid #2ecc71 ;
+  
    
     }
 
   .box {
- height: 100vh;
-width: 100%;
+ 
 /*background: #000;*/
 /*background-image: linear-gradient(#fe8c00,#f83600);*/
-background: rgb(52,73,94,0.8);
- background: linear-gradient(42deg, rgba(42,46,54,1) 0%, rgba(97,107,125,1) 100%);
+ background:#34495E; 
+ border-radius: 12px;
  }
  
  #bottom{
@@ -299,14 +283,11 @@ font-weight: bold
  }
  #join{
   
- border: 0;
-   
-background:#191919; 
- box-shadow:  7px 7px 20px rgba(0,0,0,0.4);
+ 
  }
  #join:hover{
   
-  background: #C0392B;
+  
  
  }
  .menu{
@@ -346,7 +327,7 @@ display: flex;
 }
 @media only screen and (max-height: 568px){
   #nameNew{
-margin-top:-30px;
+margin-top:-20px;
   }
   
 }
@@ -354,10 +335,10 @@ margin-top:-30px;
   
   
  .box input[type = "text"],.box input[type = "password"]{
-    margin:30px;
+    margin:25px;
   }
   .box input[type ="submit"]{
-margin:30px;
+margin:25px;
   }
 }
 
