@@ -14,6 +14,7 @@
   
 
   <form id="formOne" class="menu" action="/room">
+        <h4>Create a Chat</h4>
    <input type="text" name="room" id="roomname">
    <input type="text" name="Username" id="nameNew" placeholder="Username"> 
    <p id="messageone"></p>
@@ -47,10 +48,27 @@ body{
  width: 100vw;
 background: linear-gradient(42deg, rgba(42,46,54,1) 0%, rgba(97,107,125,1) 100%);
  }
- h3{
-  color: white
- }
 
+ h3{
+   margin: 0;
+  color: white;
+text-transform: uppercase;
+color: white;
+font-size: 20px;
+letter-spacing: 2px ;
+font-weight: 400;
+ }
+ h4{
+position: absolute;
+top: 15px;
+
+text-transform: uppercase;
+color: white;
+font-size: 20px;
+letter-spacing: 2px ;
+font-weight: 400;
+ }
+ 
  ::placeholder{
 
 color:  white;
@@ -266,13 +284,7 @@ border-bottom-left-radius: 20%;
  
 
   
- h3{
-   margin: 0;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-font-weight: bold
- }
+ 
  .box:before {
  content: "";
 /*background: #000;*/
@@ -340,7 +352,7 @@ display: flex;
   
   
  .box input[type = "text"],.box input[type = "password"]{
-    margin:25px;
+ margin:25px
   }
   .box input[type ="submit"]{
 margin:25px;
@@ -351,10 +363,10 @@ margin:25px;
   
   
  .box input[type = "text"],.box input[type = "password"]{
-    margin:15px;
+    margin:25px;
   }
   .box input[type ="submit"]{
-margin:15px;
+margin:25px;
   }
 
 
