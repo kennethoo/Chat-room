@@ -4,10 +4,9 @@ let closelist= document.querySelector(".closeslist")
 let people= document.getElementById("people")
 let leave= document.getElementById("leave")
    let username = document.getElementById("Userroom")
-let newroom = document.getElementById("newroom")
+   let newroom = document.getElementById("newroom")
    let createroom= document.getElementById("createroom")
    let imgbefore = document.getElementById("imgbefore")
-
  let one =document.getElementById("one")
  let text= document.getElementById("text")
 const send = document.getElementById("send")
@@ -127,7 +126,7 @@ closes.onclick=function(){
 
  people.onclick=function(){
   list.style.width="100%"
-  
+
  }
 
  closelist.onclick=function(){
@@ -239,6 +238,7 @@ sendmessage.value=""
 //myFunction(x)
 
   
+
 
 
 
