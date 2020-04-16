@@ -7,6 +7,7 @@ let users={}
 let rooms =["baby"]
 let roominfo
 let useer
+let client=0;
 let stateone = "good"
 let statetwo = "bad"
 let PORT  = process.env.PORT || 5000
@@ -28,10 +29,11 @@ roomName = roomName + mixName[Math.floor(Math.random()*mixName.length)]
 
 
 io.on("connection", socket=>{
-	
+	   
+client=client + 1
 
 
-
+socket.emit("number", client)
 	socket.on("create-Room", function(room){
   
 		ChooseRoom()
@@ -74,8 +76,8 @@ socket.on("persone", names=>{
        })
 
     socket.on("disconnect", ()=>{
-	io.to(room).emit("users-diconnected", users[socket.id])
-delete users[socket.id]
+	 io.to(room).emit("users-diconnected", users[socket.id])
+     delete users[socket.id]
 
 	})
 
@@ -113,7 +115,10 @@ delete users[socket.id]
 
 
 	socket.on("disconnect", ()=>{
-  
+      client = client -1
+       
+    socket.emit("numberleft", client)
+   
 
 })
 
@@ -124,8 +129,12 @@ app.get("/",(req,res)=>{
 	res.sendFile(path.resolve(__dirname,"index.html"))
 })
 
+app.get("/peopleconnectedinblackoutapp",(req,res)=>{
+  res.sendFile(path.resolve(__dirname,"people.html"))
+})
+
 app.get("/:room",(req,res)=>{
-	res.sendFile(path.resolve(__dirname,"room.html"))
+  res.sendFile(path.resolve(__dirname,"room.html"))
 })
 
 
