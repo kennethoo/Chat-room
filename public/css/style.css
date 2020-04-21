@@ -48,7 +48,7 @@ text-transform:capitalize;
 }
 .closeslist:hover{
      -webkit-text-stroke:1px transparent;
-      color: #191919;
+      color: #000;
 }
 #list{
     z-index: 4000;
@@ -61,8 +61,9 @@ text-transform:capitalize;
     overflow-y:scroll;
     overflow-x:hidden;
      width: 0%;
-     background: #283747 ;
-  transition: 1.5s ease ;
+     /*background: #283747 ;*/
+     background: #191919;
+  transition: 0.8s ease ;
  
 }
 #clientname{
@@ -83,16 +84,17 @@ text-transform:capitalize;
     margin-top: 20px;
     height:50px;
     overflow-x: hidden;
-    width: 95%;
+    width: 90%;
     margin-left: auto;
         margin-right: auto;
 display: flex;
 align-items: center;
-border-top: 2px solid #283747;
-border-bottom: 2px solid #283747 ;
+border-top: 2px solid  #191919;
+border-bottom: 2px solid  #191919 ;
  border-radius: 10px;
- box-shadow: 4px 4px 13px rgba(0,0,0,0.6),
-              -1px 1px 7px rgba(0,0,0,0.6)
+ box-shadow: 5px 5px 13px rgb(0,0,0,0.5),
+              -1px 1px 20px rgb(0,0,0,0.5),
+              -5px 5px 20px  #191919
 
 }
 #people{
@@ -367,11 +369,13 @@ transition: 1s ease-out
 }
 #modal{
     width: 100%;
-    position: fixed;
+    position:fixed;
+
     height: 100vh;
 z-index: 2000;
-  background-color:rgba(0,0,0,0.1);
+  background-color:rgba(0,0,0,0.8);
   display: none;
+
 
 }
 #share{
@@ -405,7 +409,10 @@ background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     transform: translate(-50%,-50%);
    transition: 1s ease-out;
     flex-direction: column;
+      box-shadow: 5px 5px 25px #4b6cb7,
+                  -5px -5px 25px #4b6cb7;
   display: none;
+
 }
 #imgleft{
    

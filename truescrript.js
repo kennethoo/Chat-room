@@ -114,10 +114,12 @@ let template= document.createElement("div")
 info.onclick=function(){
 information.style.display="flex"
 modal.style.display="inline-block"
+
 }
 closes.onclick=function(){
   information.style.display="none"
   modal.style.display="none"
+
 }
 
 
@@ -211,9 +213,14 @@ sendmessage.value=""
 
 
 
-
-
-
+  document.addEventListener('swiped-left', function(e) {
+   
+ list.style.width="100%"
+})
+  document.addEventListener('swiped-right', function(e) {
+ 
+ list.style.width="0%"
+})
 //function myFunction(x) {
   //if (x.matches) { 
  //  sendmessage.addEventListener("focus", function(){
@@ -238,6 +245,9 @@ sendmessage.value=""
 //myFunction(x)
 
   
+
+
+
 
 
 
