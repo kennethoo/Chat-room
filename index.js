@@ -48,9 +48,6 @@ socket.emit("number", client)
 
      socket.on("jointe", data=>{
 	   roominfo=data
-	
-	  
-
 	   if(rooms.indexOf(data)==-1){
        rooms.push(data)
 	    }
@@ -64,16 +61,16 @@ socket.emit("number", client)
         socket.join(room)
 
 
-socket.on("persone", names=>{
+      socket.on("persone", names=>{
 
        	users[socket.id]=names
-        io.to(room).emit("new-user", names )
+        io.to(room).emit("new-user", names)
       })
 
     	socket.on("message", function(msg){
         socket.broadcast.to(room).emit("message", {msg:msg, name:users[socket.id]})
 
-       })
+       }) 
 
     socket.on("disconnect", ()=>{
 	 io.to(room).emit("users-diconnected", users[socket.id])
